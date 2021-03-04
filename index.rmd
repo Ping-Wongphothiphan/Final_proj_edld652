@@ -38,11 +38,6 @@ districting <- read_excel(here("data", "DataVizfinal_names.xlsx")) %>%
 districting$SCHOOL_YEAR <- str_sub(districting$SCHOOL_YEAR, 6)
 
 ```
-##Hi Dave, your ggplot skill is way more advanced than mine. So, I don't have any suggestions for the coding. The comments I can give would be from an audience's perspective. I leave my comments right under each chunk of the graph.
-
-##One thing I learned from your script is that I am more familiar with interactive ggplot. I gotta learn more for my own final project, though.
-
-##Three strengths of in your project are 1) They are interactive!; 2) It has tabs on the flexdashboard, which is really user-friendly; and 3) You've provided descriptions about your data. It is really helpful for people outside the field of Education.
 
 Individualized Education Programs in BC
 ===============================
@@ -93,11 +88,7 @@ IEP <- ggplot(IEPex1, aes(x = long, y = lat, group = group, fill = `+3 IEPs`)) +
 renderPlotly(IEP)
 
 ```
-##Comment from Ping for the IEP in BC interactive map
-##1. As someone who is not familiar with the geography of British Columbia. I would recommend you putting the name of each district along with the tag showing the amount of classrooms with at least three IEP students.
-##2. You may use a different color pallette that has centered color. This would help the audience indicates easier if any area has high density, compared to average amount of the classrooms with IEP students.
-##3. You may make the header bigger and more eye-catching.
-##4. Moving the legend to the bottom and make it horizontal 
+ 
 
 
 English Learners in BC
@@ -145,9 +136,6 @@ renderPlotly(EL)
 
 
 ```
-##Comments from Ping about the English learner graph.
-##1. The same comments about legend, title, and the distric names would be the same with the above graph.
-##2. I can barely see the disticts that has > 6000 ELs. I think there are a couple ways that may enhance the visibility. First, you might try reversing the order (i.e., the districts with > 6000 ELs become dark blue and those with < 2000 become light blue). Second, you might find a way to create a new sided-window that enlarge those districts (just like what we usually see on the printed maps).
 
 EL Prevalence in Classrooms over Time
 =============================
@@ -192,6 +180,3 @@ ggplot(Plot_Longitudinal, aes(SCHOOL_YEAR, totalELs))+
     annotate(geom = "text", x = 2012, y = 1311, label = "Victoria", hjust = "left")
 
 ```
-##Comments from Ping about the graph for EL prevalence in classroom overtime.
-##1. I'm not sure if you've noticed that the ggplot is overlaying your content.
-##2. As you mentioned above that you wanna make this interactive. I think it would be a good idea to make those non-highlight lines turn into color when you 
