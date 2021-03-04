@@ -40,6 +40,10 @@ districting$SCHOOL_YEAR <- str_sub(districting$SCHOOL_YEAR, 6)
 ```
 ##Hi Dave, your ggplot skill is way more advanced than mine. So, I don't have any suggestions for the coding. The comments I can give would be from an audience's perspective. I leave my comments right under each chunk of the graph.
 
+##One thing I learned from your script is that I am more familiar with interactive ggplot. I gotta learn more for my own final project, though.
+
+##Three strengths of in your project are 1) They are interactive!; 2) It has tabs on the flexdashboard, which is really user-friendly; and 3) You've provided descriptions about your data. It is really helpful for people outside the field of Education.
+
 Individualized Education Programs in BC
 ===============================
 Column {data-width=350}
